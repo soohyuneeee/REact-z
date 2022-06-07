@@ -1,28 +1,14 @@
-import React from "react";
-import {createGlobalStyle} from 'styled-components';
-import TodoTemplate from './components/TodoTemplate';
-import TodoHead from './components/TodoHead';
-import TodoList from './components/TodoList';
-import TodoCreate from './components/TodoCreate';
-import { TodoProvider} from './TodoContext'
+import Header from '../../tesla2/src/components/Header.js.js'
+import Home from '../../tesla2/src/components/Home.js'
 import './App.css';
-
-const GlobalStyle = createGlobalStyle
-  body{
-  background: #e9ecef
-  };
-
 
 function App() {
   return (
-    <TodoProvider>
-      <GlobalStyle />
-      <TodoTemplate>
-        <TodoHead />
-        <TodoList />
-        <TodoCreate />
-      </TodoTemplate>
-    </TodoProvider>
+    <div className="App">
+      
+      <Header/>
+      <Home />
+    </div>
   );
 }
 
